@@ -10,8 +10,7 @@ VALUES ('Pedro', 'Silva', 'pedro@silva.cl' );
 INSERT INTO usuarios ( nombre, apellido, email)
 VALUES ('juan', 'Arcos', 'juana@arcos.cl');
 
-SELECT * 
-FROM usuarios;
+
 
 SELECT email 
 FROM usuarios 
@@ -24,5 +23,17 @@ limit 1;
 
 update usuarios
 set id=12
-where id=11
+where id=11;
+
+delete from usuarios
+where id = 10;
+
+
+SELECT * 
+FROM usuarios
+order by nombre asc;
+
+SELECT * 
+FROM usuarios
+order by nombre desc;
 
